@@ -5,7 +5,7 @@
     "description": "Launcher officiel de pixelmon infinity",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Enetriz, Inc.",
+        "name": "Enetriz, Inc.",
         "email": "enetrizstudio@gmail.com",
         "url": "https://github.com/Enetriz"
     },
