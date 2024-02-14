@@ -1,7 +1,7 @@
 {
     "name": "PixelmonInfinity-Launcher",
     "preductname": "Pixelmon Infinity Launcher",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Launcher officiel de pixelmon infinity",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "enetrizstudio@gmail.com",
         "url": "https://github.com/Enetriz"
     },
-    "url": "https://pixelmoninfinity.000webhostapp.com/",
+    "url": "https://pixelmoninfinity.000webhostapp.com",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
