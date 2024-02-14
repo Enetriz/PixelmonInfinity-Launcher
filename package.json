@@ -9,7 +9,7 @@
         "email": "enetrizstudio@gmail.com",
         "url": "https://github.com/Enetriz"
     },
-    "url": "http://launcher.luuxis.fr/launcherSelvania",
+    "url": "https://pixelmoninfinity.000webhostapp.com/#",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
