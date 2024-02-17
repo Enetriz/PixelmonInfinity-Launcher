@@ -260,6 +260,8 @@ class Settings {
             document.querySelector('.theme-btn-sombre').classList.add('active-theme');
         } else if (theme == "light") {
             document.querySelector('.theme-btn-clair').classList.add('active-theme');
+        } else if (theme == "Infinity") {
+            document.querySelector('.theme-btn-Infinity').classList.add('active-theme');
         }
 
         themeBox.addEventListener("click", async e => {
@@ -279,6 +281,10 @@ class Settings {
                 } else if (e.target.classList.contains('theme-btn-clair')) {
                     setBackground(false);
                     theme = "light";
+                    e.target.classList.add('active-theme');
+                } else if (e.target.classList.contains('theme-btn-Infinity')) {
+                    setBackground(false);
+                    theme = "Infinity";
                     e.target.classList.add('active-theme');
                 }
 

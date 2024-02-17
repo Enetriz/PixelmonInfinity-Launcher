@@ -2,7 +2,6 @@
  * @author Enetriz
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
  */
-
 const { ipcRenderer } = require('electron')
 const { Status } = require('minecraft-java-core')
 const fs = require('fs');
@@ -24,17 +23,17 @@ async function setBackground(theme) {
     }
     let background
     let body = document.body;
-    body.className = theme ? 'dark global' : 'light global';
-    if (fs.existsSync(`${__dirname}/assets/images/background/easterEgg`) && Math.random() < 0.005) {
-        let backgrounds = fs.readdirSync(`${__dirname}/assets/images/background/easterEgg`);
+    body.className = theme ? 'dark global' : 'light global'; 'Infinity global'
+    if (fs.existsSync(`${__dirname}/assets/images/background/Infinity`) && Math.random() < 0.005) {
+        let backgrounds = fs.readdirSync(`${__dirname}/assets/images/background/Infinity`);
         let Background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-        background = `url(./assets/images/background/easterEgg/${Background})`;
+        background = `url(./assets/images/background/Infinity/${Background})`;
     } else if (fs.existsSync(`${__dirname}/assets/images/background/${theme ? 'dark' : 'light'}`)) {
         let backgrounds = fs.readdirSync(`${__dirname}/assets/images/background/${theme ? 'dark' : 'light'}`);
         let Background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
         background = `linear-gradient(#00000080, #00000080), url(./assets/images/background/${theme ? 'dark' : 'light'}/${Background})`;
     }
-    body.style.backgroundImage = background ? background : theme ? '#000' : '#fff';
+    body.style.backgroundImage = background ? background : theme ? '#000' : '#fff'; '#fff';
     body.style.backgroundSize = 'cover';
 }
 
